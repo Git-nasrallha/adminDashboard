@@ -1,0 +1,16 @@
+.main-sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 70px;
+    background-color: #f8f9faab;
+    width: 200px;
+    font-size:$mainFontSize ;
+    text-transform: capitalize;
+    color: $textColor;
+    padding-left: 30px;
+    .nav-item{
+        margin-bottom: 12px;
+    }
+}

@@ -1,0 +1,52 @@
+.products-page{
+    .btn-add{
+        @include button
+    };
+    .action{
+        a{
+            color: $successColor;
+        };
+        button{
+            color: $dangerColor;
+        }
+        button ,a{
+            border: none;
+            background: none;
+            margin: 0 5px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    };
+    
+}
+.add-product{
+    form label{
+        text-transform: capitalize;
+        font-weight: 500;
+    }
+    button{
+        @include button
+    }
+};
+.product-detalis{
+    .product-data{
+        .main-image{
+            flex-basis: 70%;
+            img{
+                width: 80%;
+                height: 500px;
+            }
+        }
+        .product-images{
+            flex-direction: column;
+            align-content: flex-start;
+            flex-basis: 30%;
+            img{
+                width: 70px;
+                height: 80px;
+                margin-top: 10px;
+            }
+        }
+    }
+    
+}

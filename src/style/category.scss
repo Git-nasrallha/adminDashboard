@@ -1,0 +1,17 @@
+.categories-page{
+    .category-header{
+        button{
+            @include button
+        }
+    };
+    .categories ul li span{
+        display: inline-block;
+        margin-right: 500px;
+    }
+    .categories>ul>li{
+        &>span{
+            color: #f00;
+        }
+       
+    }
+}

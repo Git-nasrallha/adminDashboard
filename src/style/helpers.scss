@@ -1,0 +1,23 @@
+// prefix mixin
+@mixin prefix ($prop ,$val){
+    -webkit-#{$prop}:$val ;
+    -moz-#{$prop}: $val;
+    -o-#{$prop}: $val;
+};
+@mixin button {
+    @include prefix(box-sizing,border-box );
+    border: 1px solid transparent;
+   -webkit-border-radius:10px 0 10px ;
+   -moz-border-radius:5px 10px ;
+   -o-border-radius:5px 10px ;
+   background-color: $secendColor;
+   text-transform: capitalize;
+   padding: 6px 10px;
+   color: $ligtColor;
+   margin: 0 3px;
+   text-decoration: none;
+   transition: all .3s ease-in-out;
+   &:hover{
+    background-color: $mainColor;
+   }
+}

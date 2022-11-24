@@ -1,0 +1,27 @@
+.register-page{
+    form{
+        padding: 20px;
+        input ,.input-group-text {
+            border-color: $secendColor;
+        };
+        svg{
+            color: $mainColor;
+        }
+        button{
+            @include button;
+            display: block;
+            width: 100%;
+            margin-top: 12px;
+        }
+    }
+};
+
+.login-page{
+    @extend  .register-page;
+        form{
+            border: 1px solid $secendColor;
+            @include prefix(border-radius,20px);
+            padding: 30px 30px;
+        }
+   
+}

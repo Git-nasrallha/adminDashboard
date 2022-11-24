@@ -1,0 +1,90 @@
+.order-status{
+    margin-top: 50px;
+    margin-bottom: 70px;
+    .status-text{
+        width: 600px;
+        font-weight: bold;
+        text-transform: capitalize;
+        div{
+           &:nth-of-type(1){
+            transform: translateX(-15px);
+           };
+           &:nth-of-type(2){
+            transform: translateX(7px);
+           };
+           &:nth-of-type(3){
+            transform: translateX(27px);
+           };
+           &:last-of-type{
+            transform: translateX(40px);
+           }
+        }
+    };
+    .stutus-progress{
+        width: 600px;
+        height: 5px;
+        background-color: #ccc;
+        margin: 20px 0;
+        border-radius: 5px;
+        .orderStatus {
+            width: calc(100%/3);
+            height: 100%;
+            background-color: #ccc;
+            position: relative;
+            &:last-of-type{
+                width: 0;
+            }
+            &::before{
+                content:"";
+                display: block;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: #ccc;
+                position: absolute;
+                left:-2px;
+                top: -5px;
+            };
+            &.active{
+                background-color: #080;
+                &::before{
+                    content:'';
+                    display: block;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background-color: #080;
+                    position: absolute;
+                    left:-2px;
+                    top: -5px;
+                };
+            };
+        };
+        
+    };
+    .select-status{
+        margin-left: 100px;
+        select{
+            text-transform: capitalize;
+            font-weight: 500;
+            padding: 4px 10px;
+            border-color: $mainColor;
+        }
+    }
+    .status-date{
+        width: 600px;
+        font-weight: 500;
+        text-transform: capitalize;
+        div{
+           &:nth-of-type(1){
+            transform: translateX(-20px);
+           };
+           &:nth-of-type(3){
+            transform: translateX(20px);
+           };
+           &:last-of-type{
+            transform: translateX(45px);
+           }
+        }
+    };
+}

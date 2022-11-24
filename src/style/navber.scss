@@ -1,0 +1,24 @@
+.navbar{
+    box-shadow: 0 0px 8px $secendColor;
+    text-transform: capitalize;
+    z-index: 1000;
+    a{
+        text-decoration: none;
+        color: $secendColor;
+        font-weight: 500;
+        transition: all .3s ease-in-out;
+        &:hover{
+            color: $mainColor
+        }
+    }
+    .user-action{
+        a{
+            @include button;
+        };
+        button{
+            @include button;
+            margin: 0 10px;
+        }
+
+    }
+}

@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+};
+a{
+    text-decoration: none;
+};
+
+@import './variables.scss';
+@import './helpers.scss';
+@import './navber.scss';
+@import './sidebar.scss';
+@import './user.scss';
+@import './category.scss';
+@import './product.scss';
+@import './orders.scss';
+
+.modal-footer{
+    button{
+        @include button
+    }
+};
